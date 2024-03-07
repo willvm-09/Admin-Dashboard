@@ -3,3 +3,12 @@ img {
     width: 50px;
 }
 
+.leftSidebar {
+    display: flex;
+    flex-direction: row;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+}
