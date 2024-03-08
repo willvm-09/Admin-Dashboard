@@ -1,14 +1,23 @@
 img {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 }
 
 .leftSidebar {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: 1fr 2fr;
+    width: 200px;
+    background-color: lightblue;
 }
 
-.icons {
-    display: flex;
-    flex-direction: column;
+.sidebarPara {
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
+
