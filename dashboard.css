@@ -10,14 +10,43 @@ img {
 
 .leftSidebar {
     display: grid;
-    grid-template-rows: repeat(10, 1fr);
     grid-template-columns: 1fr 2fr;
-    width: 200px;
+    grid-column: 1;
     background-color: lightblue;
 }
 
 .sidebarPara {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column: 2 / 3;
 }
 
+.mainBody {
+    grid-column-start: 2 / 6;
+    display: grid;
+}
+
+.header {
+    grid-column: 1 / 5;
+    display: grid;
+    background-color: white;;
+ }
+
+.topHeader, 
+.bottomHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+ }
+
+ a {
+    border: 1px solid;
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+    padding: 8px;
+ }
+
+ .body, .rightSidebar {
+    background-color: whitesmoke;
+ }
