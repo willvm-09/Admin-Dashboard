@@ -9,47 +9,51 @@
 <body>
     <div class="mainContainer">
         <div class="leftSidebar">
-            <img src="icons/view-dashboard.svg" alt="Dashboard icon">
-            <p class="sidebarPara">Dashboard</p>
-            <img src="icons/home.svg" alt="Home icon">
-            <p class="sidebarPara">Home</p>
-            <img src="icons/card-account-mail-outline.svg" alt="Profile icon">
-            <p class="sidebarPara">Profile</p>
-            <img src="icons/message-reply.svg" alt="Message">
-            <p class="sidebarPara">Messages</p>
-            <img src="icons/clock.svg" alt="History icon">
-            <p class="sidebarPara">History</p>
-            <img src="icons/file-multiple.svg" alt="Task icon">
-            <p class="sidebarPara">Tasks</p>
-            <img src="icons/account-group.svg" alt="Communities icon">
-            <p class="sidebarPara">Communities</p>
-            <img src="icons/cog.svg" alt="Settings icon">
-            <p class="sidebarPara">Settings</p>
-            <img src="icons/account-question.svg" alt="Support icon">
-            <p class="sidebarPara">Support</p>
-            <img src="icons/shield-check.svg" alt="Privacy icon">
-            <p class="sidebarPara">Privacy</p>
+            <ul>
+                <li><img src="icons/view-dashboard.svg" alt="Dashboard icon">Dashboard</li>
+                <li><img src="icons/home.svg" alt="Home icon">Home</li>
+                <li><img src="icons/card-account-mail-outline.svg" alt="Profile icon">Profile</li>
+                <li><img src="icons/message-reply.svg" alt="Message">Messages</li>
+                <li><img src="icons/clock.svg" alt="History icon">History</li>
+                <li><img src="icons/file-multiple.svg" alt="Task icon">Tasks</li>
+                <li><img src="icons/account-group.svg" alt="Communities icon">Communities</li>
+            </ul>
+            <ul>
+                <li><img src="icons/cog.svg" alt="Settings icon">Settings</li>
+                <li><img src="icons/account-question.svg" alt="Support icon">Support</li>
+                <li><img src="icons/shield-check.svg" alt="Privacy icon">Privacy</li>
+            </ul>
         </div>
         <div class="mainBody">
             <div class="header">
                 <div class="topHeader">
-                    <img src="icons/search.svg" alt="Search icon">
-                    <input type="search" name="search" value="" id="search">
-                    <img src="icons/notification.svg" alt="Notification bell">
-                    <img src="images/prettysleepy-pixabay.png" alt="Cartoon face of a white woman">
-                    <p class="AccountName">Morgan Oakley</p>
+                    <div class="search">
+                        <img class="topHeaderitem" src="icons/search.svg" alt="Search icon">
+                        <input class="topHeaderitem" type="search" name="search" value="" id="search" size="100">
+                    </div>
+                    <div class="notification">
+                        <img class="topHeaderitem" src="icons/notification.svg" alt="Notification bell">
+                        <img class="topHeaderitem" src="images/prettysleepy-pixabay.png" alt="Cartoon face of a white woman">
+                        <p class="topHeaderitem" id="AccountName">Morgan Oakley</p>
+                    </div> 
                 </div>
                 <div class="bottomHeader">
-                    <img class="bigImage" src="images/prettysleepy-pixabay.png" alt="Cartoon face of a white woman">
-                    <p>Hi there!</p> <br>
-                    <p>Morgan Oakley (@morgan)</p>
-                        <p><a href="#">New</a></p>
-                        <p><a href="#">Upload</a></p>
-                        <p><a href="#">Share</a></p>
+                    <div class="userID">
+                        <img id="bigImage" src="images/prettysleepy-pixabay.png" alt="Cartoon face of a white woman">
+                        <p>Hi there! <br> Morgan Oakley (@morgan)</p>  
+                    </div>
+                    <div class="nav">
+                        <p class="bottomHeaderItem"><a href="#">New</a></p>
+                        <p class="bottomHeaderItem"><a href="#">Upload</a></p>
+                        <p class="bottomHeaderItem"><a href="#">Share</a></p>
+                    </div>
                 </div>
             </div>
+            <div class="yourProjectsAndAnnouncements">
+                <h2 class="yourProjects">Your Projects</h2>
+                <h2 class="announcemnets"> Announcements</h2>
+            </div>
             <div class="body">
-                <h2>Your Projects</h2>
                 <div class="project">
                     <h2>Super Cool Project</h2>
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
@@ -77,41 +81,26 @@
             </div>
             <div class="rightSidebar">
                 <div class="topSidebar">
-                    <h2>Announcements</h2>
-                    <div class="siteMaintenance">
                         <h3>Site Maintenance</h3>
                         <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam</p>
-                    </div>
-                    <div class="CommunityShareDay">
+                    
                         <h3>Community Share Day</h3>
                         <p>nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-                    </div>
-                    <div class="updatedPrivacyPolicy">
+                   
                         <h3>Updated Privacy Policy</h3>
                         <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</p>
-                    </div>
                 </div>
-                <div class="bottonSidebar">
-                    <h2>Trending</h2>
-                    <div class="userProfiles">
-                        <div class="user1">
-                            <img src="images/Eleatell-pixabay.png" alt="">
-                            <p>@tegan</p> <br> 
-                            <p>World Peace Builder</p>
-                        </div>
-                        <div class="user2">
-                            <img src="images/prettysleepy-pixabay.png"">
-                            <p>@morgan</p><br>
-                            <p>Super Cool Project</p>
-                        </div>
-                        <div class="user3">
-                            <img src="images/mattblanchefield-pixabay.jpg" alt="">
-                            <p>@kendall</p><br>
-                            <p>Life Changing App</p>
-                        </div>
-                        <div class="user3">
-                            <img src="images/kazimkayhan-pixabay.jpg" alt="">
-                        </div>
+                <h2 class="trending">Trending</h2>
+                <div class="bottomSidebar">
+                    <div class="sidebarImages">
+                        <img src="images/Eleatell-pixabay.png" alt="">
+                        <p><strong>@tegan</strong> <em>World Peace Builder</em></p>
+                        <img src="images/prettysleepy-pixabay.png" alt="">
+                        <p><strong>@morgan</strong> <em>Super Cool Project</em></p>
+                        <img src="images/mattblanchefield-pixabay.jpg" alt="">
+                        <p><strong>@kendall</strong> <em>Life Changing App</em></p>
+                        <img src="images/kazimkayhan-pixabay.jpg" alt="">
+                        <p><strong>@Alex</strong> <em>No Traffic Maker</em></p>
                     </div>
                 </div>
             </div>
